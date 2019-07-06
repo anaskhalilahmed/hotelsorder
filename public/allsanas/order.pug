@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+     link(rel="stylesheet", href="../bootstrap 3.4.1/bootstrap.min.css")
+     script(src="../bootstrap 3.4.1/bootstrap.min.js")
+    body
+      h2(style="font-size:15px;color:#232073") This Is Your Order
+      hr
+      each OrderModel in userorder
+       div(class="lead bg-primary")   NAME #{OrderModel.name}
+       br
+       div(class="lead bg-primary")  EMAIL #{OrderModel.email}
+       br
+       div(class="lead bg-primary")  PILLOWS QUANITY: #{OrderModel.pillowsqty}
+       br
+       div(class="lead bg-primary")  PILLOWS VARIETY: #{OrderModel.pillowsvariety}
+       br
+       div(class="lead bg-primary") PILLOWS COLOR:  #{OrderModel.pillowscolor}
+       br
+       img(class="img-responsive img-rounded" src=OrderModel.imageurl style="height:200px;width:200px;")
+       

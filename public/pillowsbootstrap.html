@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap 3.4.1/bootstrap.min.css">
+    <script src="bootstrap 3.4.1/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap 3.4.1/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- this is navbar section -->
+    <nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">AllSana'sHotelCollections</a>
+</div>
+<ul class="nav navbar-nav">
+<li><a href="home2.html">Home</a></li>
+<li  class="active"><a href="pillowsbootstrap.html" >PILLOWS</a></li>
+<li><a href="curtainsbootstrap.html">CURTAINS</a></li>
+<li><a href="towelsbootstrap.html" >TOWELS</a></li>
+<li><a href="tableclothesbootstrap.html" >TABLE CLOTHES</a></li>
+<li><a href="bedsheetsbootstrap.html" >BEDSHEETS</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<!-- this navbar-right is used to placed somthing on right side of navbar -->
+<!-- you can aslo maked searchbar in navbar using navbar right class -->
+<li><input type="text" id="text" class="form-control" list="searchvalues" placeholder="Search...."></li>
+<datalist id="searchvalues">
+<option value="pillows" />
+<option value="pillow"  />
+<option value="curtain"></option>
+<option value="curtains"></option>
+<option value="tableclothes" />
+<option value="bedsheet" />
+<option value="bedsheets" />
+<option value="towel" />
+<option value="towels" />
+<option value="tableclothe" />
+<option value="tableclothes" />
+</datalist>
+<li><button class="btn btn-default" onclick="search()">Search</button></li>
+</ul>
+</div>
+</nav>
+<!-- end nav bar -->
+<!-- search bar section -->
+        <script>
+function search(){
+var TextBox=document.getElementById("text").value;
+if(TextBox=="pillows" || TextBox=="pilows" || TextBox=="pillos" || TextBox=="pilos" || TextBox=="pillow"){
+window.open("pillowsbootstrap.html","_self");
+}
+else if(TextBox=="curtains" || TextBox=="curtain" || TextBox=="curtan" || TextBox=="curtans" ){
+window.open("curtainsbootstrap.html","_self");
+}
+else if(TextBox=="towels" || TextBox=="towel" || TextBox=="towal" || TextBox=="towals" ){
+window.open("towelsbootstrap.html","_self");
+}
+else if(TextBox=="tableclothes" || TextBox=="tableclothe" ){
+window.open("tableclothesbootstrap.html","_self");
+}
+else if(TextBox=="bedsheet" || TextBox=="bedsheets" ){
+window.open("bedsheetsbootstrap.html","_self");
+}
+}
+</script>
+<!-- end search bar sections -->
+        
+    
+
+
+<!-- send order button align right sidde -->
+<form class="text-right" action="pillowsorder" method="GET">
+<button class="btn btn-primary btn-lg">sendorders</button>
+</form>
+<br><br>
+
+
+<!-- subscription form -->
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<p class="lead text-primary">Get Inspired by AllSana's Hotel</p>
+<form class="form-inline" action="signin" method="POST">
+<input type="email" class="form-control" name="email"  required   placeholder="Enter Your Email">
+<button class="btn btn-primary">Sign Me Up</button>   
+</form>
+</div>
+</div>
+
+<hr style="border: 2px solid gray;">
+
+
+
+
+
+
+<!-- pillows best fabrics description -->
+<div class="row">
+<div class="col-xs-8 col-sm-9  col-md-9 col-lg-9 ">
+<div class="container" style="width: 80%;">
+<h4 class="lead text-primary">Best Febrics To Make Pillows</h4>
+<p class="text-info lead jumbotron">
+1.Cotton<br>
+100% Cotton fabric is always the best in making pillow cases. It looks beautiful and are comfortable as well.
+Freshly laundered and lightly starched cotton has a very crisp feel to it. It is absorbent and gentle on your skin. Cotton pillowcases will bunch up, however, and can make non-permanent crease marks on your skin. Cotton is cool to sleep on and absorbent. Cotton is generally affordable and can be found anywhere.
+        <br><br>2.Linen<br>
+        Linen is a natural product of flax. Once commonly produced, linen is now quite expensive because it is no longer made in bulk. Linen has a very unique feel to it and it cannot be mistaken for any other material. Like satin, it is recognized for its quality.
+        These eight materials are all soft, making them excellent choices for a pillowcase.<br>
+        <br><br>3.Polysters<br>
+        Polyester is a man-made fiber that is very popular for bed linens. It doesn’t feel like a natural fiber but it lasts a long time. Polyester is not absorbent and is often mixed with cotton to make it more absorbent.
+        <br><br>4.Velvet<br>
+        Ideally made of silk, velvet is a fabric with a pile that is very comfortable against your skin. Velvet can be made from cotton and polyester as well. Cotton velvet is frequently used for pillowcases. The deep pile of velvet can be hot in the summer but it is pleasantly warm most of the year. Velvet can be washed, but only gently.
+        <br><br>5.Silk<br>
+        Mostly silk farics is used for making pillows couvers.
+        Silk is one of the popular fabrics for apparel because of its unique properties. Silk is most luxurious fabric, the most comfortable fabric, the most absorbent of fabrics (equal to wool), the best fabric for drape, the best fabric for color, capable of the greatest lustre, having the finest "hand" etc. These are some of the factors which make the fabric more popular. The fabric is cool in summer and warm in winter.<br>
+        </p>
+        </div>
+        </div>
+        <!--side bar  -->
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="height: 1100px;border-left: 2px solid gray;">
+<img class="img-rounded img-responsive" src="images/Facebook-logo.png" style="height: 150px;width: 100%;">
+<div class="text-center">
+<a  class="btn btn-danger" href="https://web.facebook.com/All-sanas-hotels-orders-collections-955673781439702/?modal=admin_todo_tour" target="blank">Facebook</a>   
+</div>
+<br><br><br><br><br><hr>
+<img  src="images/reply.png" class="img-rounded img-responsive" style="height: 100px;width: 100%;">
+<div class="text-center">
+<a  class="btn btn-danger" href="reply.html">Reply Us</a>
+</div>   
+</div>
+</div>
+</div>
+
+
+
+
+<br><br><br>
+<!-- standared pillows sizes -->
+
+<!-- table table-stripped -->
+<div class="container">
+        <h2 class="text-danger">Standared Sizes of Pillows</h2>
+        <div class="table-responsive">
+        <table class="table table-bordered">
+        <tbody>
+        <tr>
+        <td class="lead text-default">Standard Pillow Size</td>
+    <td class="lead text-default">20" x 26"</td>    
+    </tr>
+        <tr>
+        <td class="lead text-default">Super Standard Pillow Size</td>
+    <td class="lead text-default">20" x 28"</td>    
+    </tr>
+        <tr>
+        <td class="lead text-default">Queen Pillow Size</td>
+        <td class="lead text-default">20" x 30"</td>
+        </tr>
+        <tr>
+                <td class="lead text-default">King Pillow Size</td>
+                <td class="lead text-default">20" x 36"</td>
+                </tr>
+        </tbody>
+        </table>
+        </div>
+    </div>
+        	<br><br><br><br>
+
+
+<!-- sizes of pillow cases couver -->
+<div class="container">
+<div class="jumbotron">
+<h2 class="text-warning">Standared Sizes of Pillowscase(pillowscouvers)</h2>
+<p class="text-info">Sizes of Pillowcases<br>
+Pillowcases must be slightly larger than the pillows for which they're intended. The open end of the pillowcase extends about 6 inches beyond the end of the pillow to keep the pillow covered when it's fluffed and when you're sleeping on it. A standard pillowcase is 21 inches wide by 32 inches long. A case for a queen size pillow is 21 inches wide by 36 inches long. A king size pillowcase is 21 inches wide by 42 inches long.
+</div>
+
+<br>
+<hr style="border: 2px solid gray;">
+
+
+
+<!-- pillows images section -->
+<p class="lead text-danger">Here are some pillows if you interested in pillows please send order.</p>
+<div class="row">
+<div  class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Organic Real Down Pillow</p>
+ <a href="images/hilton-down-pillow-HIL-108-D_xlrg.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/hilton-down-pillow-HIL-108-D_xlrg.jpg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <p class="text-info">Organic Cotton Pillow 100% Cotton</p>
+<a href="images/Latex-cotton_large_ffa043ae-f94e-449c-9f21-442ea8919468_400x400.jpg"><img class="img-rounded img-responsive" style="height: 90px;width:100%;"  src="images/Latex-cotton_large_ffa043ae-f94e-449c-9f21-442ea8919468_400x400.jpg" ></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Bests Hotels Pillows</p>
+ <a href="images/Best-Hotel-Pillows.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/Best-Hotel-Pillows.jpg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Luxury Hotels Pillows</p>
+<a href="images/curatedbyjw-feather-down-pillow-jw-108_lrg.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/curatedbyjw-feather-down-pillow-jw-108_lrg.jpg"></a>
+        </div>
+</div>
+
+<!-- first reow ended -->
+<!-- second row starts -->
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Bests Hotels Pillows</p>
+<a href="images/sheraton-feather-down-pillow-sh-108-f_lrg.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/sheraton-feather-down-pillow-sh-108-f_lrg.jpg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Bests Hotels cusions Pillows</p>
+  <a href="images/Best-Hotel-Pillows.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/Best-Hotel-Pillows.jpg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <p class="text-info"> Hotels Cloud Collection Pillows</p>
+          <a href="images/BEDPILSTD00001.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/BEDPILSTD00001.jpg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">super-soft-premium-quality-cushion-pillow</p>
+<a href="images/0000119_16-x-16-40-cms-x-40-cms-super-soft-premium-quality-cushion-pillow-by-sleep-expert-4-pieces_550.jpeg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/0000119_16-x-16-40-cms-x-40-cms-super-soft-premium-quality-cushion-pillow-by-sleep-expert-4-pieces_550.jpeg"></a>
+</div>
+</div>
+<!-- third row starts -->
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Rashmi-ikat-throw-pillow</p>
+<a href="images/sharon-turner-rashmi-ikat-throw-pillow_37d133d2-3aec-4ac4-8e6e-574d8ab17cc4.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/sharon-turner-rashmi-ikat-throw-pillow_37d133d2-3aec-4ac4-8e6e-574d8ab17cc4.jpg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+ <p class="text-info">Linen pilows for best sleeping</p>
+<a href="images/474.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/474.jpg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+ <p class="text-info">super-soft-premium-quality-cushion-pillow</p>
+<a href="images/0000119_16-x-16-40-cms-x-40-cms-super-soft-premium-quality-cushion-pillow-by-sleep-expert-4-pieces_550.jpeg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/0000119_16-x-16-40-cms-x-40-cms-super-soft-premium-quality-cushion-pillow-by-sleep-expert-4-pieces_550.jpeg"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+ <p class="text-info">Hotel-pillow</p>
+<a href="images/best-pillow-for-hotel-large.jpg"><img class="img-rounded img-responsive" style="height: 90px;width:100%;" src="images/best-pillow-for-hotel-large.jpg"></a>
+</div>
+</div>
+<!-- fourth row starts -->
+<div class="row">
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Polysters pillows</p>
+<a href="images/martex-brentwood-pillows-15.gif"><img class="img-rounded img-responsive" style="height: 100px;width: 100%;" src="images/martex-brentwood-pillows-15.gif"></a>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+<p class="text-info">Star-Polysters pillows</p>
+<a href="images/0008463_star-polyester-pillow-1500-g_550.jpeg"><img class="img-rounded img-responsive" style="height: 100px;width: 100%;" src="images/0008463_star-polyester-pillow-1500-g_550.jpeg"></a>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+ <p class="text-info">Polysters pillows Couvers</p>
+<a href="images/Polyester-Pillow-Covers1.jpg"><img class="img-rounded img-responsive" style="height: 100px;width: 100%;" src="images/Polyester-Pillow-Covers1.jpg"></a>
+        </div>
+</div>
+<br><br><br>
+
+
+<!-- footer -->
+<br><br>
+<div class="container">
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left bg-primary">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">Contact Us</h5>
+              <p>Contact information:03335701663,03004602412,<br>
+                Contact using e-mail:anaskhalilahmed@gmail.com,
+                myaseenrtax@gmail.com,smjameelalsana@gmail.com</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">About Us</h5>
+              <p>
+Allsana's is the company in Lahore Pakistan which deals Hotesl Fabrics  Products like making Pillows,Curtians,Bedsheets,TableClohtes,Towels. We have a proper team for this work.We were serve thousand off products to the Paksitan Hotels and We will work in fairly manner hope you will not have a complaint about our products.
+                    <br>
+                    Address<br>
+                    Al Faisal Town<br>
+                    Zarar shaeed road,near YasirBroast<br>
+                    Lahore Paksitan<br>
+                    Mr Jameel 03004602412<br>
+                    Mr Yaseen 03335701663</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Text -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-info">© 2018 Copyright:
+          <a href="http://hotelsfabricsorders.herokuapp.com"> Hotelfabricsorders.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+
+         
+    </div>
+</body>
+</html>

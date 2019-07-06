@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+     link(rel="stylesheet", href="../bootstrap 3.4.1/bootstrap.min.css")
+     script(src="../bootstrap 3.4.1/jquery-3.3.1.min.js")
+     script(src="../bootstrap 3.4.1/bootstrap.min.js")
+
+    body(style="background-color:lightgray")
+      div(class="container jumbotron")
+       h2(class="lead text-primary") This Is Your Order
+       p(class="lead text-info") If you want to delete your order go back and delete your order
+       hr
+      each TableModel in orders
+        div(class="container jumbotron")
+         div(class="lead text-primary" style="border:1px solid gray;") Name: #{TableModel.FullName}
+         div(class="lead text-primary" style="border:1px solid gray;") HotelName: #{TableModel.HotelName}
+         div(class="lead text-primary" style="border:1px solid gray;") ManagerName: #{TableModel.ManagerName}
+         div(class="lead text-primary" style="border:1px solid gray;") Email: #{TableModel.Email}
+         div(class="lead text-primary" style="border:1px solid gray;") Phoneno: #{TableModel.PhoneNo}
+         div(class="lead text-primary" style="border:1px solid gray;") CNIC: #{TableModel.CNIC}
+         div(class="lead text-primary" style="border:1px solid gray;") Address: #{TableModel.Address}
+         div(class="lead text-primary" style="border:1px solid gray;") TableClothesVariety: #{TableModel.TableClothesVariety}
+         div(class="lead text-primary" style="border:1px solid gray;") TableClothesColor: #{TableModel.TableClothesColor}
+         div(class="lead text-primary" style="border:1px solid gray;") TableClothesQuantity: #{TableModel.TableClothesQuantity}
+         div(class="lead text-primary" style="border:1px solid gray;") TableClothesSizes: #{TableModel.TableClothesSizes}
+         div(class="lead text-primary" style="border:1px solid gray;") OrderDate: #{TableModel.Date}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap 3.4.1/bootstrap.min.css">
+    <script src="bootstrap 3.4.1/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap 3.4.1/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- this is navbar section -->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">AllSana'sHotelCollections</a>
+</div>
+<ul class="nav navbar-nav">
+<li><a href="home2.html">Home</a></li>
+<li><a href="pillowsbootstrap.html" >PILLOWS</a></li>
+<li><a href="curtainsbootstrap.html">CURTAINS</a></li>
+<li><a href="towelsbootstrap.html" >TOWELS</a></li>
+<li  class="active"><a href="tableclothesbootstrap.html" >TABLE CLOTHES</a></li>
+<li><a href="bedsheetsbootstrap.html" >BEDSHEETS</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<!-- this navbar-right is used to placed somthing on right side of navbar -->
+<!-- you can aslo maked searchbar in navbar using navbar right class -->
+<li><input type="text" id="text" class="form-control" list="searchvalues" placeholder="Search...."></li>
+<datalist id="searchvalues">
+<option value="pillows" />
+<option value="pillow"  />
+<option value="curtain"></option>
+<option value="curtains"></option>
+<option value="tableclothes" />
+<option value="bedsheet" />
+<option value="bedsheets" />
+<option value="towel" />
+<option value="towels" />
+<option value="tableclothe" />
+<option value="tableclothes" />
+</datalist>
+<li><button class="btn btn-default" onclick="search()">Search</button></li>
+</ul>
+</div>
+</nav>
+<!-- end nav bar -->
+<!-- search bar section -->
+<script>
+function search(){
+var TextBox=document.getElementById("text").value;
+if(TextBox=="pillows" || TextBox=="pilows" || TextBox=="pillos" || TextBox=="pilos" || TextBox=="pillow"){
+window.open("pillowsbootstrap.html","_self");
+}
+else if(TextBox=="curtains" || TextBox=="curtain" || TextBox=="curtan" || TextBox=="curtans" ){
+window.open("curtainsbootstrap.html","_self");
+            }
+else if(TextBox=="towels" || TextBox=="towel" || TextBox=="towal" || TextBox=="towals" ){
+window.open("towelsbootstrap.html","_self");
+}
+else if(TextBox=="tableclothes" || TextBox=="tableclothe" ){
+window.open("tableclothesbootstrap.html","_self");
+}
+else if(TextBox=="bedsheet" || TextBox=="bedsheets" ){
+window.open("bedsheetsbootstrap.html","_self");
+}
+}
+</script>
+<!-- end search bar sections -->
+                    
+                
+            
+            
+            <!-- send order button align right sidde -->
+<form class="text-right" action="tableclotheorders" method="GET">
+<button class="btn btn-primary btn-lg">sendorders</button>
+</form>
+<br><br>
+            
+            
+<!-- subscription form -->
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<p class="lead text-primary">Get Inspired by AllSana's Hotel</p>
+<form class="form-inline" action="signin" method="POST">
+<input type="email" class="form-control" name="email" required  placeholder="Enter Your Email">
+<button class="btn btn-primary">Sign Me Up</button>   
+</form>
+</div>
+</div>
+            
+<hr style="border: 2px solid gray;">
+            
+
+
+<div class="row">
+<div class="col-xs-9  col-sm-9 col-md-9  col-lg-9">
+    <div class="container" style="width: 80%;">
+<h2 class="text-danger">TableClothes</h2>
+<p class="text-info lead">Tablecloths are made from cotton, polyester, vinyl or specialty materials like silk.
+Fabric napkins, tablecloths, and placemats add style to your table.  A wide variety of fabrics can be used to make placemats and napkins. 
+Fabric napkins are environmentally friendly, too, <br><br>
+<img src="images/tableclotheslinen-band.jpg" height="170px" width="100%;">
+<br><br>
+<a class="btn btn-info btn-lg" href="images/chart-of-standard-tablecloth-sizes-thumb.jpg">chart-of-standard-tablecloth-sizes</a>        
+</p>
+</div>
+</div>
+
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="height: 450px;border-left: 2px solid gray;">
+<img class="img-rounded img-responsive" src="images/Facebook-logo.png" style="height: 150px;width: 100%;">
+<div class="text-center">
+<a  class="btn btn-danger" href="https://web.facebook.com/All-sanas-hotels-orders-collections-955673781439702/?modal=admin_todo_tour" target="blank">Facebook</a>   
+</div>
+<br><br><br><br><br><hr>
+<img  src="images/reply.png" class="img-rounded img-responsive" style="height: 100px;width: 100%;">
+<div class="text-center">
+<a  class="btn btn-danger" href="reply.html">Reply</a>
+</div>
+</div>                            
+</div>
+        
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<hr style="border: 2px solid gray;">
+<!-- pillows images section -->
+<p class="lead text-danger">Here are some TableClothes if you interested in pillows please send order.</p>
+<div class="row">
+<div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">The Best Napkins And TableClothes</p>
+<a href="images/tablelinens-lowres-6994.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/tablelinens-lowres-6994.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Hotels TableClothes in Linen</p>
+<a href="images/table-linen-langel.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;"  src="images/table-linen-langel.jpg" ></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-3 col-lg-4">
+<p class="text-info">TableClothes-Linen-With-Napkins</p>
+<a href="images/tableclotheslinen-band.jpg"> <img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/tableclotheslinen-band.jpg"></a>
+</div>
+</div>
+
+<!-- first reow ended -->
+<!-- second row starts -->
+<div class="row">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Round-Shantung-Silk-Tablecloth</p>
+<a href="images/132RD-270121-132-in.-Round-Shantung-Silk-Tablecloth-Beige_main.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/132RD-270121-132-in.-Round-Shantung-Silk-Tablecloth-Beige_main.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Round-Shantung-Silk-Tablecloth</p>
+<a href="images/118RD-270102-118-in.-Round-Shantung-Silk-Tablecloth-Ivory_main_540x540.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/118RD-270102-118-in.-Round-Shantung-Silk-Tablecloth-Ivory_main_540x540.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Rectangular-Shantung-Silk-Tablecloth-White</p>
+<a href="images/90132-270101-90-x-132-in.-Rectangular-Shantung-Silk-Tablecloth-White_main_540x540.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/90132-270101-90-x-132-in.-Rectangular-Shantung-Silk-Tablecloth-White_main_540x540.jpg"></a>
+</div>
+</div>
+<!-- third row starts -->
+<div class="row">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">cotton-tablecloth-white</p>
+<a href="images/cotton-tablecloth-white-default.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/cotton-tablecloth-white-default.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">woven-tableclothes</p>
+<a href="images/woven tableclothes.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/woven tableclothes.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">New-hotel-tablecloth-Woven</p>
+<a href="images/ufriday-new-hotel-tablecloth-waffle-plaid.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/ufriday-new-hotel-tablecloth-waffle-plaid.jpg"></a>
+</div>
+</div>
+
+<br>
+
+<br><br><br><br>
+<div class="container">
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left bg-primary">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">Contact Us</h5>
+              <p>Contact information:03335701663,03004602412,<br>
+                Contact using e-mail:anaskhalilahmed@gmail.com,
+                myaseenrtax@gmail.com,smjameelalsana@gmail.com</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">About Us</h5>
+              <p>
+Allsana's is the company in Lahore Pakistan which deals Hotesl Fabrics  Products like making Pillows,Curtians,Bedsheets,TableClohtes,Towels. We have a proper team for this work.We were serve thousand off products to the Paksitan Hotels and We will work in fairly manner hope you will not have a complaint about our products.
+                    <br>
+                    Address<br>
+                    Al Faisal Town<br>
+                    Zarar shaeed road,near YasirBroast<br>
+                    Lahore Paksitan<br>
+                    Mr Jameel 03004602412<br>
+                    Mr Yaseen 03335701663</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Text -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-info">© 2018 Copyright:
+          <a href="http://hotelsfabricsorders.herokuapp.com"> Hotelfabricsorders.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

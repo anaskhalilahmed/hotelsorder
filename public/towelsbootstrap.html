@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap 3.4.1/bootstrap.min.css">
+    <script src="bootstrap 3.4.1/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap 3.4.1/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- this is navbar section -->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">AllSana'sHotelCollections</a>
+</div>
+<ul class="nav navbar-nav">
+<li><a href="home2.html">Home</a></li>
+<li><a href="pillowsbootstrap.html" >PILLOWS</a></li>
+<li><a href="curtainsbootstrap.html">CURTAINS</a></li>
+<li   class="active"><a href="towelsbootstrap.html" >TOWELS</a></li>
+<li><a href="tableclothesbootstrap.html" >TABLE CLOTHES</a></li>
+<li><a href="bedsheetsbootstrap.html" >BEDSHEETS</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<!-- this navbar-right is used to placed somthing on right side of navbar -->
+<!-- you can aslo maked searchbar in navbar using navbar right class -->
+<li><input type="text" id="text" class="form-control" list="searchvalues" placeholder="Search...."></li>
+<datalist id="searchvalues">
+<option value="pillows" />
+<option value="pillow"  />
+<option value="curtain"></option>
+<option value="curtains"></option>
+<option value="tableclothes" />
+<option value="bedsheet" />
+<option value="bedsheets" />
+<option value="towel" />
+<option value="towels" />
+<option value="tableclothe" />
+<option value="tableclothes" />
+</datalist>
+<li><button class="btn btn-default" onclick="search()">Search</button></li>
+</ul>
+</div>
+</nav>
+<!-- end nav bar -->
+<!-- search bar section -->
+<script>
+function search(){
+var TextBox=document.getElementById("text").value;
+if(TextBox=="pillows" || TextBox=="pilows" || TextBox=="pillos" || TextBox=="pilos" || TextBox=="pillow"){
+window.open("pillowsbootstrap.html","_self");
+}
+else if(TextBox=="curtains" || TextBox=="curtain" || TextBox=="curtan" || TextBox=="curtans" ){
+window.open("curtainsbootstrap.html","_self");
+}
+else if(TextBox=="towels" || TextBox=="towel" || TextBox=="towal" || TextBox=="towals" ){
+window.open("towelsbootstrap.html","_self");
+}
+else if(TextBox=="tableclothes" || TextBox=="tableclothe" ){
+window.open("tableclothesbootstrap.html","_self");
+}
+else if(TextBox=="bedsheet" || TextBox=="bedsheets" ){
+window.open("bedsheetsbootstrap.html","_self");
+}
+}
+</script>
+<!-- end search bar sections -->
+            
+
+<!-- send order button align right sidde -->
+<form class="text-right" action="towelorders" method="GET">
+<button class="btn btn-primary btn-lg">sendorders</button>
+</form>
+<br><br>
+        
+        
+<!-- subscription form -->
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<p class="lead text-primary">Get Inspired by AllSana's Hotel</p>
+
+<form class="form-inline" action="signin" method="POST">
+        <input type="email" class="form-control" name="email" required  placeholder="Enter Your Email">
+        <button class="btn btn-primary">Sign Me Up</button>   
+        </form>
+</div>
+</div>
+        
+<hr style="border: 2px solid gray;">
+
+
+
+<!-- towels best fabrics description -->
+<div class="row">
+<div class="col-xs-8 col-sm-9  col-md-9 col-lg-9 ">
+<div class="container" style="width: 80%;">
+<h4 class="lead text-primary">Best Febrics To Make Towels</h4>
+<p class="text-info lead jumbotron">
+1.Most bath towels are made of cotton, but cotton towels vary in their softness, absorbency, durability and color-fastness. Fabric type is the most important feature of a bath towel. Here are some of the most common fabrics:<br><br>
+2.Bamboo bath towels • can be 100% bamboo, but are more often a bamboo and cotton blend. Bamboo bath towels are lush, supple and color-fast. The bamboo plant is naturally anti-bacterial, grows heartily in a pest-free environment and makes a super absorbent fabric.<br><br>
+3.Egyptian cotton bath towels • made of the highest quality cotton and are one of the most popular types of bath towels. Egyptian cotton fibers are extra-long and highly absorbent, making Egyptian cotton bath towels the most exquisite way to end a shower or bath. Luxurious Egyptian cotton has a very long lifespan when properly cared for.<br><br>
+4.Microfiber bath towels • a fairly new type of towel. Microfiber is made by blending polyester and polyamide fibers (80/20 ratio is common). Microfiber grabs dust, dirt, dry skin, makeup and oil without chemicals.<br><br>
+5.Organic cotton bath towels • are woven from cotton untouched by unnatural fertilizers or pesticides. Certified organic cotton is grown and harvested to leave the smallest possible carbon footprint, and organic cotton bath towels are usually created under the same earth-friendly mantra.<br><br>
+6.Pima cotton bath towels • are grown from the same plant used for Egyptian cotton, only Pima cotton (and its brand name, Supima cotton) is grown in southwestern U.S. Like their Egyptian cousins, Pima cotton bath towels are known for being strong and thirsty.<br><br>
+7.Turkish cotton bath towels • are made of extra-long cotton fibers similar to Egyptian cotton towels. The cotton grown in the Aegean region is soft, fluffy and strong. Turkish cotton bath towels are absorbent ( but not as absorbent as Egyptian cotton ) so they are ideal for warm climates with excessive moisture. Turkish cotton bath towels are known as being thick and luxurious.
+
+</p>
+</div>
+</div>
+<!--side bar  -->
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="height: 1100px;border-left: 2px solid gray;">
+<img class="img-rounded img-responsive" src="images/Facebook-logo.png" style="height: 150px;width: 100%;">
+<div class="text-center">
+<a  class="btn btn-danger" href="https://web.facebook.com/All-sanas-hotels-orders-collections-955673781439702/?modal=admin_todo_tour" target="blank">Facebook</a>   
+</div>
+<br><br><br><br><br><hr>
+<img  src="images/reply.png" class="img-rounded img-responsive" style="height: 100px;width: 100%;">
+<div class="text-center">
+<a  class="btn btn-danger" href="reply.html">Reply</a>
+</div>           
+</div>
+</div>
+</div>
+
+
+<br><br><br>
+<!-- standared pillows sizes -->
+
+<!-- table table-stripped -->
+<div class="container">
+<h2 class="text-danger">Towel Standard Sizes</h2>
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td class="lead text-default">Washcloths</td>
+<td class="lead text-default">Measurements: 12'' x 12''</td>    
+</tr>
+<tr>
+<td class="lead text-default">Hand Towels</td>
+<td class="lead text-default">Measurements: 20'' x 30''</td>    
+</tr>
+<tr>
+<td class="lead text-default">Bath Towels</td>
+<td class="lead text-default">Measurements: 30'' x 56''</td>
+</tr>
+<tr>
+<td class="lead text-default">Bath Sheets</td>
+<td class="lead text-default">Measurements: 40'' x 70''</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br><br><br><br>
+
+
+
+
+
+<!-- description of pillows sizes -->
+<div class="container">
+<div class="panel-group">
+<div class="panel panel-primary">
+<div class="panel-heading lead">Washclothes</div>
+<div class="panel-body lead">Washcloths are the smallest bath towel option, and they are commonly used to wash and dry your face outside of the shower. They also work well to cleanse and exfoliate your body while you shower.<br><br></div>
+</div>
+        
+<div class="panel panel-primary">
+<div class="panel-heading lead">Hand Towels</div>
+<div class="panel-body lead">As their name suggests, hand towels are intended for drying your hands. These towels remain outside of the shower, and they can also be used to dry your face, as well.</div>
+</div>
+            
+        
+<div class="panel panel-primary">
+<div class="panel-heading lead">Bath Towels</div>
+<div class="panel-body lead">Bath towels are the most commonly used towel for drying off after a bath or shower. They are ideal for drying both your body and hair, as their size makes them soft and absorbent, but not overly heavy.</div>
+</div>
+
+
+<div class="panel panel-primary">
+<div class="panel-heading lead">Bath Sheets</div>
+<div class="panel-body lead">Bath sheets are the largest towel choice available, and they are optimal for drying off and wrapping up in after a shower or bath. They work particularly well if you seek more coverage. For reference, our oversized bath sheets are 67% bigger than our bath towels.</div>
+</div>
+</div>
+</div>
+
+
+
+<br>
+<hr style="border: 2px solid gray;">
+        
+
+
+<!-- towels images section -->
+<p class="lead text-danger">Here are some Towels if you interested in pillows please send order.</p>
+<div class="row">
+<div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info"> White-hotel-towels-face-towels-bulk</p>
+<a href="images/White-hotel-towels-face-towels-bulk-cheap.jpg_350x350.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/White-hotel-towels-face-towels-bulk-cheap.jpg_350x350.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">White-hotel-towels-face-towels-bulk</p>
+ <a href="images/Wholesale-towels-bulk-towel-erc.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;"  src="images/Wholesale-towels-bulk-towel-erc.jpg" ></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Cotton-Soft-Adults-Microfiber-Face-Hand-Hair-Towels</p>
+<a href="images/2015-New-100-Cotton-Soft-Adults-Microfiber-Face-Hand-Hair-Towels-4pcs-a-lot-34-75cm.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/2015-New-100-Cotton-Soft-Adults-Microfiber-Face-Hand-Hair-Towels-4pcs-a-lot-34-75cm.jpg"></a>
+</div>
+</div>
+
+<!-- first reow ended -->
+<!-- second row starts -->
+<div class="row">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">cotton-Hand-white-Towel</p>
+<a href="images/cotton hand towel_.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/cotton hand towel_.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">100% cotton-white-Towel</p>
+<a href="images/cotton.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/cotton.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Hotel-Face-Towels-cotton</p>
+<a href="images/Hotel-Face-Towel-Bath-Towel-Hand-Towel-Bath-Mat-Cotton.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/Hotel-Face-Towel-Bath-Towel-Hand-Towel-Bath-Mat-Cotton.jpg"></a>
+</div>
+</div>
+<!-- third row starts -->
+<div class="row">
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Silk-Towels</p>
+<a href="images/silk.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/silk.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">Silk-Towels-White</p>
+<a href="images/silktowel.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/silktowel.jpg"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+<p class="text-info">polystertowels-in-Borders</p>
+<a href="images/polystertowels.jpg"><img class="img-rounded img-responsive" style="height: 90px;width: 100%;" src="images/polystertowels.jpg"></a>
+</div>
+</div>
+<br><br><br>
+<br>
+<div class="container">
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left bg-primary">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">Contact Us</h5>
+              <p>Contact information:03335701663,03004602412,<br>
+                Contact using e-mail:anaskhalilahmed@gmail.com,
+                myaseenrtax@gmail.com,smjameelalsana@gmail.com</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">About Us</h5>
+              <p>
+Allsana's is the company in Lahore Pakistan which deals Hotesl Fabrics  Products like making Pillows,Curtians,Bedsheets,TableClohtes,Towels. We have a proper team for this work.We were serve thousand off products to the Paksitan Hotels and We will work in fairly manner hope you will not have a complaint about our products.
+                    <br>
+                    Address<br>
+                    Al Faisal Town<br>
+                    Zarar shaeed road,near YasirBroast<br>
+                    Lahore Paksitan<br>
+                    Mr Jameel 03004602412<br>
+                    Mr Yaseen 03335701663</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Text -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-info">© 2018 Copyright:
+          <a href="http://hotelsfabricsorders.herokuapp.com"> Hotelfabricsorders.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+ 
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

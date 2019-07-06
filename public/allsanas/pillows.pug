@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+     link(rel="stylesheet", href="../bootstrap 3.4.1/bootstrap.min.css")
+     script(src="../bootstrap 3.4.1/jquery-3.3.1.min.js")
+     script(src="../bootstrap 3.4.1/bootstrap.min.js")
+    body(style="background-color:lightgray")
+      div(class="container")
+       h2(class="lead text-primary") This Is Your Order
+       p(class="lead text-info") If you want to delete your order go back and delete your order
+       hr
+      each PillowsModel in order
+       div(class="container well")
+        div(class="lead text-info" style="border:1px solid gray") Name: #{PillowsModel.FullName}
+        div(class="lead text-info" style="border:1px solid gray") HotelName: #{PillowsModel.HotelName}
+        div(class="lead text-info" style="border:1px solid gray") ManagerName: #{PillowsModel.ManagerName}
+        div(class="lead text-info" style="border:1px solid gray") Email: #{PillowsModel.Email}
+        div(class="lead text-info" style="border:1px solid gray") Phoneno: #{PillowsModel.PhoneNo}
+        div(class="lead text-info" style="border:1px solid gray") CNIC: #{PillowsModel.CNIC}
+        div(class="lead text-info" style="border:1px solid gray") Address: #{PillowsModel.Address}
+        div(class="lead text-info" style="border:1px solid gray") PillowsVariety: #{PillowsModel.PillowsVariety}
+        div(class="lead text-info" style="border:1px solid gray") PillowsColor: #{PillowsModel.PillowsColor}
+        div(class="lead text-info" style="border:1px solid gray") PillowsQuantity: #{PillowsModel.PillowsQuantity}
+        div(class="lead text-info" style="border:1px solid gray") PillowsSize: #{PillowsModel.PillowsSize}
+        div(class="lead text-info" style="border:1px solid gray") PillowsCaseVariety: #{PillowsModel.PillowsCaseVariety}
+        div(class="lead text-info" style="border:1px solid gray") PillowsCaseColor: #{PillowsModel.PillowsCaseColor}
+        div(class="lead text-info" style="border:1px solid gray") PillowsCaseQuantity: #{PillowsModel.PillowsCaseQuantity}                                                 
+        div(class="lead text-info" style="border:1px solid gray") PillowsCaseSize: #{PillowsModel.PillowsCaseSize}
+        div(class="lead text-info" style="border:1px solid gray") PillowsCaseOwnHeightSize: #{PillowsModel.PillowsCaseOwnHeightSize}
+        div(class="lead text-info" style="border:1px solid gray") PillowsCaseOwnWidthSize: #{PillowsModel.PillowsCaseOwnWidthSize}
+        div(class="lead text-info" style="border:1px solid gray") OrderDate: #{PillowsModel.Date}

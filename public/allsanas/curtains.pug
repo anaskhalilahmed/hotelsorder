@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+     link(rel="stylesheet", href="../bootstrap 3.4.1/bootstrap.min.css")
+     script(src="../bootstrap 3.4.1/jquery-3.3.1.min.js")
+     script(src="../bootstrap 3.4.1/bootstrap.min.js")
+    body
+      div(class="container")
+       h2(class="lead text-primary") This Is Your Order
+       p(class="lead text-info") If you want to delete your order go back and delete your order
+       hr
+      each CurtainsModel in orders
+       div(class="container jumbotron")
+        div(class="lead text-primary" style="border:1px solid gray;") Name: #{CurtainsModel.FullName}
+        div(class="lead text-primary" style="border:1px solid gray;") HotelName: #{CurtainsModel.HotelName}
+        div(class="lead text-primary" style="border:1px solid gray;") ManagerName: #{CurtainsModel.ManagerName}
+        div(class="lead text-primary" style="border:1px solid gray;") Email: #{CurtainsModel.Email}
+        div(class="lead text-primary" style="border:1px solid gray;") Phoneno: #{CurtainsModel.PhoneNo}
+        div(class="lead text-primary" style="border:1px solid gray;") CNIC: #{CurtainsModel.CNIC}
+        div(class="lead text-primary" style="border:1px solid gray;") Address: #{CurtainsModel.Address}
+        div(class="lead text-primary" style="border:1px solid gray;") CurtainsVariety: #{CurtainsModel.CurtainsVariety}
+        div(class="lead text-primary" style="border:1px solid gray;") CurtainsColor: #{CurtainsModel.CurtainsColor}
+        div(class="lead text-primary" style="border:1px solid gray;") CurtainsQuantity: #{CurtainsModel.CurtainsQuantity}
+        div(class="lead text-primary" style="border:1px solid gray;") CurtainsSize: #{CurtainsModel.CurtainsSize}
+        div(class="lead text-primary" style="border:1px solid gray;") CurtainsOwnHeightSize: #{CurtainsModel.CurtainsOwnHeightsize}
+        div(class="lead text-primary" style="border:1px solid gray;") CurtainsOwnWidthSize: #{CurtainsModel.CurtainsOwnWidthsize}
+        div(class="lead text-primary" style="border:1px solid gray;") OrderDate: #{CurtainsModel.Date}

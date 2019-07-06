@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap 3.4.1/bootstrap.min.css">
+    <script src="bootstrap 3.4.1/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap 3.4.1/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="background-color: lightslategray;">
+
+<div class="container" style="height: auto;background-color: lightgray;">
+<div class="container bg-primary" style="height: 70px;width: 100%;">
+<h2 class="text-default">AllSanas'sHotelsOrders</h2>
+</div>
+
+<br>
+<!-- payment method button align right sidde -->
+<form class="text-right" action="payment-method" method="GET">
+<button class="btn btn-warning btn-lg">PaymentMethod</button>
+</form>
+<br><br>
+
+<div class="jumbotron">
+<p>Here are the ways how to send orders.<br>
+1.if you want to send items orders more then one varieties or sizes.Like if you want polysters pillows in standard size and then you want to order 
+cotton pillows in  super standared sizes so gives orders one by one means first gives polyster pillows order then second gives cotton pillows order.</p>    
+</div>
+
+<br>
+
+
+<form class="form-inline" autocomplete="off" action="hotelpillows" method="POST" onsubmit="return HotelValidation()">
+<!-- full name -->
+    <label class="lead text-warning">Enter Your FullName(your Name must be required otherwise your
+orders not submitted)
+</label><br>
+<input id="five" type="text" name="FullName"  class="form-control"  placeholder="Enter your FullName"  required/><br><br>
+<!-- hotle name -->
+<label class="lead text-warning">Enter Your HotelName(if exist)</label><br>
+<input id="eight" type="text" name="HotelName" class="form-control" placeholder="Enter your HotelName"><br><br>
+<!-- manger name -->
+<label class="lead text-warning">Enter Your HotelManagerName(if exist)</label><br>
+<input id="nine" type="text" name="ManagerName" class="form-control" placeholder="Enter your HotelManagerName"><br><br>
+<!-- email -->
+<label class="lead text-warning">Enter Your Email(your validEmail must be required otherwise your
+orders not submitted)</label><br>
+<input class="form-control" id="two" type="email" name="Email" placeholder="Enter your Email" required><br><br>
+<!-- phono no -->
+<label class="lead text-warning">Enter your phoneno(required)</label><br>
+<input class="form-control" id="phone" type="number" name="PhoneNo" value="" required placeholder="Enter your Phoneno"><br><br>
+<!-- cnic -->
+<label class="lead text-warning">Enter Your CNIC(your CNIC will not be miss used)
+<br>(your cnic length must be equal to 13 characters otherwise your orders not submitted)
+</label><br>
+<input class="form-control" id="three" type="number" name="CNIC" value="" placeholder="Enter Your CNIC" required><br><br>
+<!-- address -->
+<label class="lead text-warning">Enter Your Address(your validAdress must be required otherwise your
+orders not submitted)</label><br>
+<input class="form-control" id="four" type="text" name="Address" size="100" placeholder="Enter your Address" required><br>
+<br><br>
+<hr style="border: 2px solid gray;">
+
+<!-- pillows section -->
+<label class="lead text-primary">Pillows</label><br>
+<!-- pillows variety -->
+<p class="lead text-info">Select Pillows Variety</p>
+<select class="form-control lead" name="PillowsVariety" id="pillowvariety">
+<option value="variety">----SelectVariety----</option>
+<option>cotton</option>
+<option>Silk</option>
+<option>Linen</option>
+<option>Polyster</option>
+<option>Velvet</option>
+</select>&nbsp;&nbsp;&nbsp;
+<!-- pillows color -->
+<p class="lead text-info">Select pillows color(basically we deals in simple white pillows for hotels)
+if you want othercolors so send pictures to our gmail
+</p>
+<select class="lead form-control" name="PillowsColor" id="pillowcolor">
+<option value="color">----Selectcolor----</option>
+<option>HotelsSimpleWhite</option>
+<option>othercolors</option>
+</select>
+<!-- pillows quantity -->
+<input class="form-control lead" type="number" id="qty" name="PillowsQuantity" placeholder="enter pillows quantity">
+<!-- pilows sizes -->
+<select class="lead form-control" name="PillowsSize" id="pillowsize" >
+<option value="size">----SelectSize----</option>
+<option>Standard Pillow Size 20" x 26"</option>
+<option>Super Standard Pillow Size	20" x 28"</option>
+<option>Queen Pillow Size 20" x 30"</option>
+<option>King Pillow Size 20" x 36"</option>
+</select>
+<hr style="border: 2px solid gray;">
+        
+        
+<!-- pillowscases or pillows couvers section -->
+<label class="lead text-primary">PillowsCases or(Pillows couvers)</label><br>
+<!-- pillowscases variety -->
+<p class="lead text-info">Select PillowsCouvers Variety</p>
+<select class="lead form-control" name="PillowsCaseVariety" id="pillowvariety1">
+<option value="variety1">----SelectVariety----</option>
+<option>cotton</option>
+<option>Silk</option>
+<option>Linen</option>
+<option>Polyster</option>
+<option>Velvet</option>
+</select>&nbsp;&nbsp;&nbsp;
+<!-- pillowscase color -->
+<p class="lead text-info">select pillowsCouvers color(basically we deals in simple white pillowsCouvers for hotels)
+if you want othercolors so send pictures to our gmail.
+</p>
+<select class="lead form-control" name="PillowsCaseColor" id="pillowcolor1">
+<option value="color1">----Selectcolor----</option>
+<option>HotelsSimpleWhite</option>
+<option>othercolors</option>
+</select>
+<!-- pillowscase quantity -->
+<input id="qty1" class="lead form-control" type="number" name="PillowsCaseQuantity" placeholder="enter pillows quantity">
+<!-- pilows sizes -->
+<select id="pillowsize1" class="lead form-control" name="PillowsCaseSize" >
+<option value="size1">----SelectSize----</option>
+<option>Standard PillowCouvers Size 21" x 32"</option>
+<option>Queen Pillowcouvers Size 21" x 36"</option>
+<option>King PillowCouvers Size 21" x 42"</option>
+</select>
+<br>
+<!-- pillows own sizes -->
+<p class="lead text-info">Enter your own(default)Size
+</p>
+        
+<input class="form-control" type="number" name="PillowsCaseOwnHeightsize" placeholder="height(cm)">
+<input class="form-control" type="number" name="PillowsCaseOwnWidthsize" placeholder="width(cm)"><br><br>
+<a class="btn btn-danger btn-md" href="https://www.ehow.com/info_8458308_measurements-standard-pillow-cases.html">More About PillowsCouvers</a>
+<!-- end pillowcase section -->
+<br><br><br>
+<div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-right">
+        <input  type="checkbox" class="checkbox"  id="radio" value="" name="agree" style="height: 30px;width: 30px;">
+        </div>
+        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 text-left lead">
+        <a href="terms.html">Agree to our Terms and Conditions</a>
+        </div>
+                
+        </div>
+<br><br>
+    
+
+
+
+
+
+<button class="btn btn-danger btn-lg">SEND</button>
+</form>
+</div>
+
+
+<!-- hotel user data validation -->
+<script>
+function HotelValidation(){
+var e=document.getElementById("five").value;
+var b=document.getElementById("two").value;
+var c=document.getElementById("three").value;
+var d=document.getElementById("four").value;
+var g=document.getElementById("phone").value;
+var h=document.getElementById("eight").value;
+var i=document.getElementById("nine").value;
+var j=document.getElementById("qty").value;
+var k=document.getElementById("pillowvariety").value;
+var l=document.getElementById("pillowcolor").value;
+var m=document.getElementById("pillowsize").value;
+var n=document.getElementById("pillowvariety1").value;
+var o=document.getElementById("pillowcolor1").value;
+var p=document.getElementById("qty1").value;
+var q=document.getElementById("pillowsize1").value;
+
+var patt1 = /[^a-zA-Z]/;
+var result = e.match(patt1);
+var result1=h.match(patt1);
+var result2=i.match(patt1);
+        
+        
+if(e.value!=result){
+alert("USERNAME MUST BE IN ALPHABATES.");
+return false;
+}
+else if(e.length<3){
+alert("NOT VALID NAME");
+return false;
+}
+else if(h.value!=result1){
+alert("HOTELNAME MUST BE IN ALPAHABATES.");
+return false;
+} 
+else if(i.value!=result2){
+alert("MANAGERNAME MUST BE IN ALPAHABATES.");
+return false;
+}
+        
+if(e==""){
+alert("Your Name Should Not Be Empty.");
+return false;
+        }
+else if(b==""){
+alert("Your Email Should Not Be Empty.")
+return false;
+}
+else if(c==""){
+alert("Your Cnic should not be Empty.")
+return false;
+}
+else if(c.length != 13){
+alert("CNIC LENGTH MUST BE EQUAL TO 13 NUMBERS FOR(PAKISTAN).");
+return false;
+}
+else if(d==""){
+alert("Your Adress should not be empty.");
+return false;
+}
+else if(g.length != 11){
+alert("PHONE NUMBERS MUST BE EQUAL TO 11 NUMBERS FOR(PAKISTAN)");
+return false;
+}
+else if(j==""){
+alert("QUANITY MUST BE GIVEN FOR PILLOWS.");
+return false;
+}
+else if(j<5){
+    alert("MAXIMUM ORDERS QUANTITY WILL BE STRAT FROM 5 OR ABOVE");
+    return false;
+}
+else if(k=="variety"){
+    alert("PLEASE SELECT PILLOWS VARIETY");
+    return false;
+}
+else if(l=="color"){
+    alert("PLEASE SELECT PILLOWS COLOR");
+    return false;
+}
+else if(m=="size"){
+    alert("PLEASE SELECT PILLOWS Size");
+    return false;
+}
+else if(n=="variety1"){
+    alert("PLEASE SELECT PILLOWSCASE VARIETY");
+    return false;
+}
+else if(o=="color1"){
+    alert("PLEASE SELECT PILLOWSCASE COLOR");
+    return false;
+}
+else if(p==""){
+    alert("QUANTITY MUST BE GIVEN FOR PILLOWSCOUVERS");
+}
+else if(p<5){
+    alert("MAXIMUM ORDERS QUANTITY WILL BE STRAT FROM 5 OR ABOVE.");
+    return false;
+}
+else if(q=="size1"){
+    alert("PLEASE SELECT PILLOWSCASE SIZE.");
+    return false;
+}
+
+// var agree="";
+if(document.getElementById("radio").checked){
+document.getElementById("radio").value="true";
+}
+else if(document.getElementById("radio").value==""){
+    alert("PLEASE AGREE TO OUR TERMS AND Conditions");
+return false;
+}
+
+
+var a=confirm("Are you read our Terms and Condtions and PaymentMethod before sending order");
+
+if(a==false){
+    alert("Please read first our Terms and Conditions and Payment Method");
+    return false;
+}
+
+}
+
+</script>
+<!-- end hotels users data validation -->
+        
+
+
+
+
+<br><br>
+
+<div class="container" style="height: auto;background-color: lightgray;">
+<h4 class="text-primary lead">Find Yours Orders</h4></center>
+<p class="lead text-info">2.if you want to check your order so please enetr CNIC number in below text box
+    if your order is availiable so its shows on screen.
+</p>
+<form class="form-inline lead text-info" autocomplete="off" action="findpillows" method="POST" onsubmit="return findvalidation()">
+Enetr your CNIC Number:<input class="form-control" id="find" type="text" name="cnic" required>
+<button class="btn btn-danger btn-md">find Your Order</button>
+</form>
+<!-- find orders validation -->
+<script>
+    function findvalidation(){
+var m=document.getElementById("find").value;
+var patt1 = /[^0-9]/;
+  var result = m.match(patt1);
+ if(m.value!=result){
+ alert("CNIC MUST BE IN NUMBERS.");
+ return false;
+        }
+else if(m==""){
+alert("CNIC NUMBER SHOULD NOT BE EMPTY.");
+return false;
+}
+else if(m.length != 13){
+alert("CNIC LENGTH MUST BE EQUAL TO 13 NUMBERS FOR(PAKISTAN).");
+return false;
+}
+}
+</script>
+
+
+
+
+
+<hr style="border: 2px solid gray;">
+<h4 class="text-primary lead">Delete Yours Orders</h4></center>
+<p class="lead text-info">3.if you want to delete your order so please
+enter your cnic Numbers  in below text box.
+if you want to update your document and add new items so firstly delete your previous order
+and add or submit a new orders.<br>
+Note:if you have two orders and you want to delete both orders so  enters two times Cnic in cnic field.
+</p>
+<form class="form-inline lead text-info" autocomplete="off" action="deletepillows" method="POST" onsubmit="return deletevalidation()">
+    Enter your CNIC Number(for delete your order):<input class="form-control" id="delete" type="text" name="usercnic">
+    <button class="btn btn-danger btn-md">delete your order</button>
+</form>
+
+<!-- <form autocomplete="off" action="deletebyid1" method="POST" > -->
+        <!-- Enter your order ID Number(for delete your order):<input  type="text" name="userid"> -->
+        <!-- <button style="background-color: blue;color: white">delete your order</button> -->
+    <!-- </form> -->
+
+</div>
+
+
+
+
+<!-- cnic validation for deleted orders -->
+<script>
+function deletevalidation(){
+var n=document.getElementById("delete").value;
+var patt1 = /[^0-9]/;
+  var result = n.match(patt1);
+ if(n.value!=result){
+ alert("CNIC MUST BE IN NUMBERS.");
+ return false;
+        }
+else if(n==""){
+    alert("CNIC NUMBER SHOULD NOT BE EMPTY.");
+return false;
+}
+else if(n.length != 13){
+    alert("CNIC LENGTH MUST BE EQUAL TO 13 NUMBERS FOR(PAKISTAN).");
+return false;
+}
+}
+</script>
+<br>
+
+    
+
+
+
+
+
+    
+</body>
+</html>

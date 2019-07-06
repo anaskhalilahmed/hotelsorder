@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+      link(rel="stylesheet", href="../bootstrap 3.4.1/bootstrap.min.css")
+      script(src="../bootstrap 3.4.1/jquery-3.3.1.min.js")
+      script(src="../bootstrap 3.4.1/bootstrap.min.js")
+    body(style="background-color:lightgray")
+      div(class="container")
+       h2(class="lead text-primary") This Is Your Order
+       p(class="lead text-info") If you want to delete your order go back and delete your order
+       hr
+      each TowelsModel in orders
+       div(class="container jumbotron")
+        div(class="lead text-primary" style="border:1px solid gray;") Name: #{TowelsModel.FullName}
+        div(class="lead text-primary" style="border:1px solid gray;") HotelName: #{TowelsModel.HotelName}
+        div(class="lead text-primary" style="border:1px solid gray;") ManagerName: #{TowelsModel.ManagerName}
+        div(class="lead text-primary" style="border:1px solid gray;") Email: #{TowelsModel.Email}
+        div(class="lead text-primary" style="border:1px solid gray;") Phoneno: #{TowelsModel.PhoneNo}
+        div(class="lead text-primary" style="border:1px solid gray;") CNIC: #{TowelsModel.CNIC}
+        div(class="lead text-primary" style="border:1px solid gray;") Address: #{TowelsModel.Address}
+        div(class="lead text-primary" style="border:1px solid gray;") TowelsVariety: #{TowelsModel.TowelsVariety}
+        div(class="lead text-primary" style="border:1px solid gray;") TowelsColor: #{TowelsModel.TowelsColor}
+        div(class="lead text-primary" style="border:1px solid gray;") TowelsQuantity: #{TowelsModel.TowelsQuantity}
+        div(class="lead text-primary" style="border:1px solid gray;") TowelsSize: #{TowelsModel.TowelsSize}
+        div(class="lead text-primary" style="border:1px solid gray;") TowelsOwnHeightSize: #{TowelsModel.TowelsOwnHeightsize}
+        div(class="lead text-primary" style="border:1px solid gray;") TowelsOwnWidthSize: #{TowelsModel.TowelsOwnWidthsize}
+        div(class="lead text-primary" style="border:1px solid gray;") OrderDate: #{TowelsModel.Date}
