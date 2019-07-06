@@ -179,7 +179,8 @@ Pillows.methods.dates=function(){
     var a=new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true,timeZone:"Asia/Karachi"});
 
 var b=Date().toLocaleString('en-US', {timeZone:"Asia/Karachi"})
-    return "time is"+a+",date is"+b;
+b.toLocaleString();      
+return "time is"+a+",date is"+b;
 
 }
 
