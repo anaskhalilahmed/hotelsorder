@@ -21,6 +21,7 @@ var mongoose=require('mongoose');
 mongoose.Promise=global.Promise;
 mongoose.set('useFindAndModify', false);//is say abb deprecation warning nahi aay gi
 mongoose.connect("mongodb://anaskhalilahmed:gravity123@ds237955.mlab.com:37955/hotelsorders",{ useNewUrlParser: true });
+
 //is ko hum na mlab ka sath connect kiya ha hamray mlab db name hotelsorders ha jis ka username
 //anaskhalilahmed ha or password gravity123 ha
 //or mlab ma login honay ka liya usernmae Anas Khalil ha or password anas12345
